@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Big Display</title>
+    <script src="../js/big.js" type="text/javascript"></script>
+
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+
+
+      nav {
+        background-color: rgb(141, 207, 10);
+        text-align: center;
+        padding: 15px;
+      }
+
+      .header {
+        background-image: url(clear.webp);
+        background-size: cover;
+        height: 100vh;
+        padding-top: 100px;
+      }
+      .logo {
+        height: 70px;
+        padding-left: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      .pdiv {
+        display: flex;
+      }
+      #ac {
+        padding-top: 25px;
+        margin-left: 35px;
+        text-decoration: none;
+        color: rgb(76, 72, 72);
+      }
+      #dc {
+        display: flex;
+        margin-left: 35px;
+        text-decoration: none;
+        color: rgb(76, 72, 72);
+      }
+      #pcdiv {
+        display: flex;
+        margin-left: 200px;
+        padding-top: 25px;
+      }
+      .mb {
+        margin-left: 5px;
+        padding-top: 5px;
+      }
+      #pcimg {
+        height: 30px;
+      }
+      #hd {
+        background-color: white;
+        padding-top: 50px;
+        margin: 30px;
+        border-radius: 25px;
+      }
+      .imob {
+        height: 30px;
+      }
+      #hb {
+        display: flex;
+        margin-left: 60px;
+      }
+      #pik {
+        padding-top: 5px;
+        margin-left: 5px;
+      }
+      #hd1 {
+        display: flex;
+        margin-left: 35px;
+        background-color: rgb(141, 207, 10);
+        padding: 7px;
+        border-radius: 10px;
+        text-decoration: none;
+        color: rgb(76, 72, 72);
+      }
+      #hd1:hover {
+        background-color: rgb(76, 72, 72);
+        color: silver;
+      }
+      #hd2 {
+        display: flex;
+        margin-left: 35px;
+        background-color: rgb(76, 72, 72);
+        padding: 7px;
+        border-radius: 10px;
+        text-decoration: none;
+        color: silver;
+      }
+      #hd2:hover {
+        background-color: rgb(141, 207, 10);
+        color: rgb(76, 72, 72);
+      }
+      #div2 {
+        display: flex;
+        margin-top: 25px;
+        margin-left: 30px;
+        justify-content: space-around;
+        padding-bottom: 20px;
+      }
+      #di2 {
+        height: 20px;
+        margin-right: 20px;
+      }
+      #di21 {
+        margin-left: 200px;
+        height: 20px;
+      }
+      .d2p {
+        color: rgb(76, 72, 72);
+        background-color: rgb(141, 207, 10);
+        padding: 7px;
+        border-radius: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      #d3p {
+        background-color: rgb(76, 72, 72);
+        border-radius: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding: 7px;
+        color: silver;
+      }
+      #ldiv {
+        margin-left: 90px;
+        font-size: large;
+        padding-bottom: 15px;
+      }
+      #ap1 {
+        font-weight: bold;
+        text-align: center;
+        font-size: x-large;
+        margin-top: 100px;
+      }
+      #ap2 {
+        display: flex;
+        padding-left: 25px;
+        margin-top: 30px;
+      }
+      #ap2i {
+        width: 400px;
+        height: 200px;
+        margin-left: 20px;
+        margin-right: 20px;
+        border-radius: 10px;
+      }
+      #app {
+        margin-top: 30px;
+        padding-left: 45px;
+        font-size: x-large;
+        font-weight: bolder;
+      }
+      #appc1 {
+        text-decoration: none;
+        color: black;
+      }
+      #appc2 {
+        padding-left: 170px;
+        text-decoration: none;
+        color: black;
+      }
+      #appc3 {
+        padding-left: 140px;
+        text-decoration: none;
+        color: black;
+      }
+      #appp {
+        padding-left: 45px;
+      }
+      #appp1 {
+        color: rgb(141, 207, 10);
+        text-decoration: none;
+        font-weight: bold;
+      }
+      #appp2 {
+        padding-left: 320px;
+        color: rgb(141, 207, 10);
+        text-decoration: none;
+        font-weight: bold;
+      }
+      #appp3 {
+        padding-left: 330px;
+        color: rgb(141, 207, 10);
+        text-decoration: none;
+        font-weight: bold;
+      }
+      #art1 {
+        font-weight: bold;
+        text-align: center;
+        font-size: x-large;
+        margin-top: 100px;
+      }
+
+      #art2 {
+        display: flex;
+        padding-left: 25px;
+        margin-top: 30px;
+      }
+      #aimg {
+        width: 400px;
+        height: 200px;
+        margin-left: 20px;
+        margin-right: 20px;
+        border-radius: 10px;
+      }
+
+      #sa {
+        display: flex;
+        margin-top: 30px;
+        padding-left: 45px;
+        font-size: x-large;
+        font-weight: bolder;
+        padding-right: 30px;
+      }
+      #art3 {
+        padding-left: 45px;
+        font-weight: bolder;
+      }
+      #atc1 {
+        color: rgb(141, 207, 10);
+      }
+      #atc2 {
+        color: rgb(141, 207, 10);
+        padding-left: 350px;
+      }
+      #atc3 {
+        color: rgb(141, 207, 10);
+        padding-left: 290px;
+      }
+      .sa1 {
+        color: black;
+        text-decoration: none;
+      }
+      .sa2 {
+        padding-left: 180px;
+        color: black;
+        text-decoration: none;
+      }
+      .sa3 {
+        padding-left: 95px;
+        color: black;
+        text-decoration: none;
+      }
+
+      #rd {
+        background-color: rgb(76, 72, 72);
+        font-size: 40px;
+        text-align: center;
+        margin-top: 120px;
+        padding-top: 180px;
+        padding-bottom: 60px;
+        color: silver;
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+
+      #rdc {
+        font-size: x-large;
+        font-weight: bolder;
+      }
+      #rdc2 {
+        display: flex;
+        padding-top: 150px;
+        padding-left: 110px;
+      }
+      #rdb {
+        margin-left: 10px;
+      }
+
+      #fd {
+        background-color: rgb(76, 72, 72);
+        padding-bottom: 40px;
+        padding-top: 40px;
+      }
+
+      #fdd1 {
+        background-color: white;
+        margin-left: 565px;
+        margin-right: 620px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 10px;
+        border-style: outset;
+        border-radius: 10px;
+      }
+      #fd1i {
+        height: 40px;
+      }
+     
+      .fd7 {
+        color: silver;
+        padding-left: 40px;
+      }
+      .fd8 {
+        display: flex;
+        padding-top: 40px;
+        margin-left: 600px;
+        margin-right: 500px;
+      }
+    
+      .fd8i{
+        font-weight: bolder;
+        font-size: 15px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        color: silver;
+      }
+      .rhd {
+        font-size: 60px;
+        color: silver;
+        margin-top: 120px;
+        margin-left: 50px;
+      }
+
+      .nd {
+        display: flex;
+        text-decoration: none;
+        margin: 50px;
+      }
+
+      .ndp {
+        height: 200px;
+      }
+
+      .ndh {
+        display: flex;
+        margin-left: 50px;
+      }
+
+      .ndhd {
+        margin-left: 50px;
+      }
+
+      .ndhi {
+        color: rgb(141, 207, 10);
+        font-weight: bolder;
+      }
+
+      .ndhii {
+        text-decoration: none;
+        font-weight: bolder;
+        font-size: x-large;
+        color: black;
+      }
+
+      .ndhiii {
+        color: black;
+      }
+
+      .ndhiv {
+        color: black;
+        opacity: 0.7;
+      }
+
+      .ndl {
+        color: black;
+        opacity: 0.7;
+        font-size: large;
+        margin-left: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>BIG 2023. BIG years of culture</nav>
+    <div class="pdiv">
+      <img src="new logo big.png" alt="img" class="logo" />
+      <!-- <a href="" id="ac">HOME</a>
+      <a href="" id="ac">LATEST</a>
+      <a href="" id="ac">REVIEWS</a>
+      <a href="" id="ac">TECH</a>
+      <a href="" id="ac">LUXURY</a>
+      <div id="pcdiv">
+        <a href="" id="dc">
+          <img src="../img/car icon.png" alt="img" id="pcimg" />
+          <p class="mb">NEW RELEASES</p></a
+        >
+        <span id="dc">
+          <img src="../img/globe img.png" alt="img" id="pcimg" />
+          <p class="mb">EN</p></span
+        >
+        <a href="" id="dc">
+          <img src="../img/account img.png" alt="img" id="pcimg" />
+          <p class="mb">Login | Register</p>
+        </a> -->
+      </div>
+    </div>
+    <header class="header">
+      <div class="rhd">BIG On The <br />Culture Of Cars.</div>
+    </header>
+    <script type="text/javascript">
+      atOptions = {
+        'key' : '3701ba325a31a13f5ed8be0d7a7956bc',
+        'format' : 'iframe',
+        'height' : 60,
+        'width' : 468,
+        'params' : {}
+      };
+      document.write('<scr' + 'ipt type="text/javascript" src="//www.topcreativeformat.com/3701ba325a31a13f5ed8be0d7a7956bc/invoke.js"></scr' + 'ipt>');
+    </script>
+    <aside>
+      <p id="ap1">Latest On Car Deals, News, And Products</p>
+      <p id="ap2">
+        <a href="BMW.html">
+          <img src="bmw  blog.webp" alt="" id="ap2i" />
+        </a>
+        <a href="Benz.html">
+          <img src="benz blog.avif" alt="" id="ap2i" />
+        </a>
+        <a href="Lamb.html">
+          <img src="lambo blog.webp" alt="" id="ap2i" />
+        </a>
+      </p>
+      <p id="app">
+        <a href="BMW.html" id="appc1">
+          The BMW XM Label Red <br />
+          At The Coachella Festival
+        </a>
+        <a href="Benz.html" id="appc2"> Mercedes-AMG G 63. G-Rex </a>
+        <a href="Lamb.html" id="appc3"> Lamborghini Urus S </a>
+      </p>
+    </aside>
+    <article>
+      <p id="art1">Experience The Future Of Car Ownership With A BIG Display</p>
+      <p id="art2">
+        <a href="toyota.html">
+          <img src="toyota blog.jpg" alt="" id="aimg" />
+        </a>
+        <a href="Hyundai.html">
+          <img src="hyundai blog.jpg" alt="" id="aimg" />
+        </a>
+        <a href="Tesla.html">
+          <img src="tesla blog.avif" alt="" id="aimg" />
+        </a>
+      </p>
+      <div id="sa">
+        <a href="toyota.html" class="sa1">2024 Camry Hybrid XSE</a>
+        <a href="Hyundai.html" class="sa2"> Hyundai G80. Optical Technology</a>
+        <a href="Tesla.html" class="sa3">New Tesla Model X Dual Motor</a>
+      </div>
+    </article>
+    <div id="rd">
+      Here at BIG Display we will publish multitudes of stories in 2024, <br />
+      including everything from new car reveals and tech deep dives to<br />
+      racing interviews and recaps, and governmental issues to comedic <br />
+      crashes and plane incidents. While we obviously put our hearts into <br />
+      everything we write, our talented team all have their own specific <br />
+      topics they’re passionate about covering. To wrap up the holidays, we
+      <br />
+      tasked our staff with choosing their favorite experience they had in
+      2023<br />
+      (We’ve also got a separate roundup of the best cars we'll advertise in
+      2023.) <br />
+      Click through to take a read through BIG’s most displayed ads <br />
+      currently, and let us know your favorite reads with your feedback.
+      <div id="rdc2">
+        <button id="rdb"></button>
+        <button id="rdb"></button>
+        <button id="rdb"></button>
+        <button id="rdb"></button>
+      </div>
+    </div>
+    <a href="Space.html" class="nd">
+      <img src="tech blog 1.webp" alt="" class="ndp" />
+      <div class="ndh">
+        <div>
+          <p class="ndhi">Space</p>
+          <p class="ndhii">
+            Goodbye mysterious <br />
+            military space plane,<br />
+            and good luck- <br />
+            wherever you're <br />
+            going
+          </p>
+          <p class="ndhiii">Aria Alamalhodaei</p>
+          <p class="ndhiv">8:16 PM GMT+1 December 29,2023</p>
+        </div>
+        <div class="ndl">
+          SpaceX’s Falcon Heavy rocket launched <br />
+          a secretive military spaceplane to orbit <br />
+          last night after weeks of delays, though <br />
+          scant details about the mission have <br />
+          been released to the public. The Falcon <br />
+          ...
+        </div>
+      </div>
+    </a>
+    <a href="App.html" class="nd">
+      <img src="tech blog 2.webp" alt="" class="ndp" />
+      <div class="ndhd">
+        <p class="ndhi">Apps</p>
+        <p class="ndhii">
+          best budgeting apps <br />
+          for individuals, <br />
+          startups and small <br />
+          businesses
+        </p>
+        <p class="ndhiii">Aisha Malik</p>
+        <p class="ndhiv">8:11 PM GMT+1 December 29,2023</p>
+      </div>
+      <div class="ndl">
+        As we head into the New Year, you might <br />
+        be interested in creating a budget for <br />
+        yourself or you may be looking for a new <br />
+        tool to help manage your startup or small <br />
+        business’s budget. You may be looki...
+      </div>
+    </a>
+    <a href="Transportation.html" class="nd">
+      <img src="tech blog 3.webp" alt="" class="ndp" />
+      <div class="ndhd">
+        <p class="ndhi">Transportation</p>
+        <p class="ndhii">
+          The overlooked tech <br />
+          that kept cities <br />
+          moving in 2023
+        </p>
+        <p class="ndhiii">Rebecca Bellan</p>
+        <p class="ndhiv">8:10 PM GMT+1 December 29,2023</p>
+      </div>
+      <div class="ndl">
+        Over here at TechCrunch, our time is <br />
+        often spent finding and reporting on the <br />
+        next new new thing in mobility, from <br />
+        autonomous drones and electric air taxis <br />
+        to self-driving trucks and even <br />
+        batteries...
+      </div>
+    </a>
+    <script type='text/javascript' src='//pl22020224.toprevenuegate.com/17/69/14/1769140ee07c5812f0b2b5ac3e0237ec.js'></script>
+    <footer>
+      <div id="fd">
+          <div id="fdd1">
+            <img src="new logo big.png" alt="img" id="fd1i" />
+          </div>
+        <div class="fd7">
+          _____________________________________________________________________________________________________________________________________________________________
+        </div>
+        <div class="fd8">
+            <span class="fd8i">BIG © 2024</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
